@@ -7,8 +7,6 @@ class NotesMainView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-         NotesAppBar(),
-        // const CreateNoteInput(),
         Expanded(child: NotesGrid()), 
       ],
     );
@@ -59,37 +57,3 @@ class NoteCard extends StatelessWidget {
 }
 
 
-class NotesAppBar extends StatelessWidget {
-  const NotesAppBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      height: 64,
-      color: Colors.white,
-      child: Row(
-        children: [
-          
-          // const SizedBox(width: 32),
-          // Expanded(
-          //   child: TextField(
-          //     decoration: InputDecoration(
-          //       hintText: 'Пошук',
-          //       prefixIcon: Icon(Icons.search),
-          //       border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
-          //       contentPadding: EdgeInsets.zero,
-          //     ),
-          //   ),
-          // ),
-          // const SizedBox(width: 16),
-          // const Icon(Icons.refresh),
-          // const SizedBox(width: 16),
-          // const Icon(Icons.settings),
-          // const SizedBox(width: 16),
-          // const CircleAvatar(child: Text('А')),
-        ],
-      ),
-    );
-  }
-}

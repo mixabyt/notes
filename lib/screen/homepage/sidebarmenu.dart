@@ -55,9 +55,6 @@ class SidebarMenu extends StatelessWidget {
         children:  [
           SizedBox(height: 24),
           HoverableListTile(icon: Icons.lightbulb_outline, title: 'Нотатки', onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home),),
-          HoverableListTile(icon: Icons.notifications_none, title: 'Нагадування', onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home)),
-          HoverableListTile(icon: Icons.label_outline, title: 'Редагувати мітки', onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home)),
-          HoverableListTile(icon: Icons.archive_outlined, title: 'Архів', onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home)),
           HoverableListTile(icon: Icons.delete_outline, title: 'Кошик', onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.home)),
         ],
       ),
